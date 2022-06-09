@@ -12,7 +12,6 @@ class ModelTest(TestCase):
         """Test creating a user with an email is successful."""
         email = "test@example.com"
         password = "testpass123"
-        print('TEEEEEST',get_user_model())
         user = User.objects.create_user(
             email=email,
             password=password,
